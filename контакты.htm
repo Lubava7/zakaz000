@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background-image: url('construction-1.jpg');
+      }
+      body {
+        background-color: rgb(255 255 255 / 0.16);
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 10px;
+        border: none;
+      }
+      td {
+        background-color: rgba(0, 147, 196, 0.1);
+        padding: 20px 0;
+        margin: 10px 0;
+        border-radius: 18px;
+        text-align: start;
+        height: 130px;
+        width: 50%;
+        border: none;
+      }
+
+      td p {
+        color: #67758d;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.38px;
+      }
+      @media (max-width: 600px) {
+        td {
+          display: block;
+          width: 100%;
+        }
+        tr {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+    <!-- у всех одинаковый заголовок, чтобы можно было перемещаться по страницам -->
+    <h1 align="center">ООО "СЗ "Спецстройинвест"</h1>
+
+    <h3 align="middle">Проектирование,строительство, реконструкция зданий.</h3>
+    <button onclick="window.location.href = 'index.htm';">Главная</button>
+    <button onclick="window.location.href = 'наши_проекты.htm';">
+      Наши проекты
+    </button>
+    <button onclick="window.location.href = 'контакты.htm';">Контакты</button>
+    <button onclick="window.location.href = 'вакансии.htm';">Вакансии</button>
+    <!-- конец обязательного закоголовка -->
+
+    <h1 align="center">Контакты</h1>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>
+            <b> Телефоны </b><br />
+            <p>приемная 999-999</p>
+          </td>
+          <td>
+            <b>E-Mail </b><br />
+            <a href="mailto:999-999@ya.ru" target="_blank">999-999@ya.ru</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Мессенджеры</b> <br />
+            <a
+              href="https://wa.me/89999999999"
+              target="_blank"
+              rel="nofollow noopener"
+              >8-999-999-99-99</a
+            >
+          </td>
+          <td>
+            <b>Наш Адрес</b> <br />
+            <a href="https://yandex.ru/maps/-/CHQvrDkC" target="_blank">
+              Береговая улица, 1 ​с. Сеяха, Ямальский район, Ямало-Ненецкий
+              автономный округ, ​629705
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
