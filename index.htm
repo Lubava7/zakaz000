@@ -15,6 +15,31 @@
         background-color: rgb(255 255 255 / 61%);
         height: fit-content;
       }
+      .nav button {
+        width: 140px;
+        height: 45px;
+      }
+      article {
+        padding: 0 30px;
+      }
+      article p {
+        text-indent: 30px; /* красная строка у текста */
+      }
+
+      img {
+        max-width: 525px;
+        height: 350px;
+        margin: 10px;
+      }
+
+      @media (max-width: 850px) {
+        img {
+          width: 100%;
+          max-height: 350px;
+          object-fit: cover;
+          margin: 0;
+        }
+      }
     </style>
     <div class="content">
       <h1 align="center">ООО "СЗ "Спецстройинвест"</h1>
@@ -22,12 +47,18 @@
       <h3 align="middle">
         Проектирование,строительство, реконструкция зданий.
       </h3>
-      <button onclick="window.location.href = 'index.htm';">Главная</button>
-      <button onclick="window.location.href = 'наши_проекты.htm';">
-        Наши проекты
-      </button>
-      <button onclick="window.location.href = 'контакты.htm';">Контакты</button>
-      <button onclick="window.location.href = 'вакансии.htm';">Вакансии</button>
+      <div align="middle" class="nav">
+        <button onclick="window.location.href = 'index.htm';">Главная</button>
+        <button onclick="window.location.href = 'наши_проекты.htm';">
+          Наши проекты
+        </button>
+        <button onclick="window.location.href = 'контакты.htm';">
+          Контакты
+        </button>
+        <button onclick="window.location.href = 'вакансии.htm';">
+          Вакансии
+        </button>
+      </div>
       <article align="left">
         <p>
           Мы неизменно стремимся оставаться лучшей компанией и постоянно
@@ -45,6 +76,11 @@
           реализовывать проекты эффективно и своевременно.
         </p>
       </article>
+
+      <div align="center">
+        <img src="photo1.jpg" alt="img1" />
+        <img src="photo2.jpg" alt="img2" />
+      </div>
     </div>
   </body>
 </html>

@@ -13,10 +13,18 @@
       body {
         background-color: rgb(255 255 255 / 0.16);
       }
+      .nav button {
+        width: 140px;
+        height: 45px;
+      }
       img {
         max-width: 700px;
         height: 350px;
         flex-shrink: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
       }
 
       @media (max-width: 850px) {
@@ -31,34 +39,34 @@
     <h1 align="center">ООО "СЗ "Спецстройинвест"</h1>
 
     <h3 align="middle">Проектирование,строительство, реконструкция зданий.</h3>
-    <button onclick="window.location.href = 'index.htm';">Главная</button>
-    <button onclick="window.location.href = 'наши_проекты.htm';">
-      Наши проекты
-    </button>
-    <button onclick="window.location.href = 'контакты.htm';">Контакты</button>
-    <button onclick="window.location.href = 'вакансии.htm';">Вакансии</button>
+    <div align="middle" class="nav">
+      <button onclick="window.location.href = 'index.htm';">Главная</button>
+      <button onclick="window.location.href = 'наши_проекты.htm';">
+        Наши проекты
+      </button>
+      <button onclick="window.location.href = 'контакты.htm';">Контакты</button>
+      <button onclick="window.location.href = 'вакансии.htm';">Вакансии</button>
+    </div>
     <!-- конец обязательного закоголовка -->
 
-    <div>
-      <h2>Детский сад с. Антипаюта</h2>
+    <div align="center">
+      <h2>
+        <a href="https://taz-star.ru/" target="_blank"
+          >Детский сад с. Антипаюта
+        </a>
+      </h2>
       <img src="садик2.jpg" alt="садик2" />
       <img src="садик1.jpg" alt="садик1" />
     </div>
 
-    <div>
-      <h2>Детский сад с. Антипаюта</h2>
+    <div align="center">
+      <h2>
+        <a href="https://harpsosh-lbt.yanao.ru/" target="_blank"
+          >Школа, п. Харп
+        </a>
+      </h2>
       <img src="школа1.jpg" alt="школа1" />
       <img src="школа2.jpg" alt="школа2" />
     </div>
-
-    <!-- <figure>
-      <img src="садик2.jpg" alt="садик2" />
-      <figcaption>Детский сад с. Антипаюта</figcaption>
-    </figure>
-
-    <figure>
-      <img src="школа1.jpg" alt="школа1" />
-      <figcaption>Школа пгт. Харп</figcaption>
-    </figure> -->
   </body>
 </html>
